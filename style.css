@@ -1,0 +1,119 @@
+*{
+ padding: 0;
+ margin: 0;
+ list-style: none;   
+ font-family: "Syne";
+}
+
+#container{
+        background-image: url('assets/background.jpg');
+        background-size: 50%; /* Ajustez selon vos préférences */
+        background-repeat: no-repeat;
+        height: 100%; 
+        background-position: right top;
+      
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+height: 60px;
+margin-left: 100px;
+margin-top: 20px;
+
+}
+
+.navbar{
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+    margin-right: 100px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.paragraph{
+width: 40%;
+}
+
+.navbar-btn{
+    position: relative;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.navbar-btn::after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ff7da4;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar-btn:hover:after { 
+    width: 100%; 
+    left: 0; }
+
+.m-paragraph{
+    position: relative;
+    height: 100%;
+    left: 100px;
+    top: 100px;
+}
+
+.m-paragraph-title{
+font-size: 90px;
+letter-spacing: 3px;
+
+}
+
+.m-paragraph-text{
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.get-started {
+    color: white;
+    background-color: rgb(52, 0, 172);
+    border: none;
+    font-size: 20px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 20px;
+    font-family: 'syne';
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+.icon{
+    height: 60px;
+}
+
+.footer{
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+
+.paragraph-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.f-paragraph{
+    width: 20%;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.f-paragraph-text{
+    padding-top: 25px;
+
+}
